@@ -8,22 +8,19 @@ import android.view.View;
 import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
-private ImageView image;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        image = (android.widget.ImageView) findViewById(R.id.imageView7);
-        image.setOnClickListener(new View.OnClickListener(){
-          @Override
-          public void onClick(View v) {
-              openActivityPaladin();
-          }
-        });
     }
-    public void openActivityPaladin(){
-        Intent intent = new Intent(this, PaladinDeck.class);
-        startActivity(intent);
-    }
+
+   public void OpenActivityPaladin(View view) {
+        startActivity(new Intent(this,PaladinDeck.class));
+   }
+
+
+
+
 }

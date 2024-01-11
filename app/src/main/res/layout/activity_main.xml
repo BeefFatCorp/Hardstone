@@ -30,15 +30,13 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/header" />
 
-<RelativeLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"></RelativeLayout>
-
     <ImageView
         android:id="@+id/imageView7"
         android:layout_width="417dp"
         android:layout_height="59dp"
-        android:layout_marginTop="134dp"
+        android:layout_marginTop="130dp"
+        android:contentDescription="@string/bottom_sheet_behavior"
+        android:onClick="OpenActivityPaladin"
         android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -203,7 +201,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView9"
         app:srcCompat="@drawable/class_shaman"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="-9dp" />
+        tools:layout_editor_absoluteX="-8dp" />
 
     <ImageView
         android:id="@+id/imageView12"
@@ -243,7 +241,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView14"
         app:srcCompat="@drawable/class_priest"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="-7dp" />
+        tools:layout_editor_absoluteX="-3dp" />
 
     <ImageView
         android:id="@+id/imageView11"
@@ -257,13 +255,13 @@
 
     <ImageView
         android:id="@+id/imageView17"
-        android:layout_width="394dp"
+        android:layout_width="413dp"
         android:layout_height="61dp"
         android:scaleType="centerCrop"
         app:layout_constraintTop_toBottomOf="@+id/imageView15"
         app:srcCompat="@drawable/class_rogue"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="1dp" />
+        tools:layout_editor_absoluteX="-4dp" />
 
     <TextView
         android:id="@+id/top_shaman_name"
@@ -339,7 +337,7 @@
         android:id="@+id/top_shaman_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
+        android:layout_marginStart="8dp"
         android:layout_marginBottom="8dp"
         android:fontFamily="@font/montserrat"
         android:text="#10 Priest"
